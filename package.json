@@ -1,0 +1,17 @@
+{
+  "name": "lectio",
+  "version": "1.0.0",
+  "description": "Read lectionary citations in the public-domain Douay-Rheims, offline — with Hebrew→Vulgate psalm numbering handled, and Markdown for your daily notes.",
+  "type": "module",
+  "bin": { "lectio": "bin/lectio.js" },
+  "main": "src/lectio.js",
+  "exports": { ".": "./src/lectio.js", "./psalms": "./src/psalms.js" },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.17" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "dependencies": { "douay": "github:KhaiB10/douay" },
+  "keywords": ["bible", "catholic", "lectionary", "douay-rheims", "psalms", "obsidian", "mass-readings"],
+  "repository": { "type": "git", "url": "git+https://github.com/KhaiB10/lectio.git" },
+  "author": "Khai Bustos",
+  "license": "MIT"
+}
